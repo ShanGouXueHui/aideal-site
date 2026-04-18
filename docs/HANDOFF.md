@@ -73,3 +73,25 @@ Changes made:
 - Updated `index.html` and `privacy.html` `<head>` sections with favicon declarations.
 - Note: browsers may cache old empty favicon state; refresh cache or revisit under the final domain.
 
+
+## Update - Domain and HTTPS Binding
+
+Date: 2026-04-18
+
+Production domain binding plan:
+
+- Root domain: `aidealfy.cn`
+- WWW domain: `www.aidealfy.cn`
+- Server IP: `8.136.28.6`
+- Site root: `/var/www/aideal-site`
+- Nginx config: `/etc/nginx/sites-available/aideal-site.conf`
+- HTTPS provider: Let's Encrypt via Certbot
+- ICP number: `粤ICP备2026044123号-1`
+- ICP link: `https://beian.miit.gov.cn/`
+
+Operational notes:
+
+- `aidealfy.cn` and `www.aidealfy.cn` should both resolve to `8.136.28.6`.
+- Nginx serves the static site from `/var/www/aideal-site`.
+- Certbot manages HTTPS certificates and redirects HTTP to HTTPS.
+- Future WeChat callback and service-account related endpoints should use HTTPS domain URLs, not raw IP addresses.
