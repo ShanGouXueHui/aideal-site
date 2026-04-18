@@ -207,3 +207,21 @@ body {
     gap: 12px;
   }
 }
+
+
+.site-icp {
+  text-align: center;
+  padding: 16px 20px 28px;
+  font-size: 13px;
+  color: #999;
+  background: #fff;
+}
+
+.site-icp a {
+  color: #999;
+  text-decoration: none;
+}
+
+.site-icp a:hover {
+  text-decoration: underline;
+}
