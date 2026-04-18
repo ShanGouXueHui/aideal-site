@@ -209,19 +209,27 @@ body {
 }
 
 
-.site-icp {
-  text-align: center;
-  padding: 16px 20px 28px;
-  font-size: 13px;
-  color: #999;
-  background: #fff;
+
+
+
+
+
+
+.privacy-icp {
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+  margin: 72px auto 28px;
+  padding: 0 24px;
+  font-size: 14px;
+  color: #64748b;
 }
 
-.site-icp a {
-  color: #999;
+.privacy-icp a {
+  color: #64748b;
   text-decoration: none;
 }
 
-.site-icp a:hover {
+.privacy-icp a:hover {
   text-decoration: underline;
 }
